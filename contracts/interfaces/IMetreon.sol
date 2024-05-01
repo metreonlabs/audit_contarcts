@@ -23,10 +23,6 @@ interface IMetreon {
 
     event PostMessage(bytes32 messageId);
 
-    function isChainSupported(uint256 chainId) external view returns (bool);
-
-    function isTokenSupported(address tokenId) external view returns (bool);
-
     function estimateFee(uint256 toChainId) external view returns (uint256);
 
     function sendMessage(
